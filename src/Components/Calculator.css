@@ -1,10 +1,21 @@
 #calc {
     display: grid;
-    grid-template-columns: repeat(4, 3rem);
-    grid-template-rows: repeat(5, 3rem);
-    gap: 3px;
+    grid-template-columns: repeat(4, 4rem);
+    grid-template-rows: repeat(5, 4rem);
+    gap: 5px;
 
-    font-size: 2rem;
+    font-size: 3rem;
+    border: 1px solid gray;
+    border-radius: 1rem;
+    padding: 0.4em;
+    padding-top: 2rem;
+    background-color: black;
+}
+
+#centerer {
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
 }
 
 #clear {
@@ -12,9 +23,24 @@
 }
 
 #display {
-    grid-column: 1 / 4;
+    display: flex;
+    grid-column: 1 / 5;
+    background-color: black;
+    padding-right: 0.2em;
+    align-items: center;
+    justify-content: right;
+    color: aliceblue;
 }
 
 button {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    border: 0px;
+    border-radius: 1em;
+    background-color: rgb(75, 75, 75);
+    color: white;
+}
+
+button.operator {
+    background-color: orange;
+    padding-bottom: 4px;
 }
